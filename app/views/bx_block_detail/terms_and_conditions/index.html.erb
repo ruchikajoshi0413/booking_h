@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Terms and conditions</h1>
+
+<div id="terms_and_conditions">
+  <% @terms_and_conditions.each do |terms_and_condition| %>
+    <%= render terms_and_condition %>
+    <p>
+      <%= link_to "Show this terms and condition", terms_and_condition %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New terms and condition", new_terms_and_condition_path %>

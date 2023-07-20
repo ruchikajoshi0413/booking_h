@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @terms_and_condition %>
+
+<div>
+  <%= link_to "Edit this terms and condition", edit_terms_and_condition_path(@terms_and_condition) %> |
+  <%= link_to "Back to terms and conditions", terms_and_conditions_path %>
+
+  <%= button_to "Destroy this terms and condition", @terms_and_condition, method: :delete %>
+</div>
